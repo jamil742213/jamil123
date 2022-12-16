@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my first page</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        min-height:  100vh;
+        display: flex;
+        justify-content: center;
+        background: #181818;
+    }
+    .frem{
+        width: 27rem;
+        height: 15rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 23px;
+        box-shadow: 0px 0px 20px #0000007a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .border{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        height: 200%;
+        width: 200%;
+        overflow:  hidden;
+        background: linear-gradient(to right #303030 20%, #303030 40%, #ff00a5 50%, #ff2f00 55%, #00ffdc 100%);
+        background-size: 200% auto;
+        animation: shine 3s linear infinite;
+        transform:  rotate(-45deg);
+    }
+    .border::before{
+        content: "jamil_akter";
+        position: absolute;
+        transform: rotate(45deg);
+        height: 47px;
+    width: 474px;
+    
+    }
+    @keyframes shine{
+        to{
+            background-position: 200% center;
+
+        }
+    }
+</style>
+<body>
+    <div class="frem">
+        <dive class="border"</dive>
+    </div>
+</body>
+</html>
